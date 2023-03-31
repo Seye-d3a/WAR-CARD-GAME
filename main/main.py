@@ -1,14 +1,10 @@
-import Card from ./Class/cards.py
-import Deck from ./Class/deck.py
-import player from ./Class/player.py
+from cards import Card
+from deck import Deck
+from player import Player
 
-import random
-suits = ('Hearts', 'Diamonds', 'Spades', 'Clubs')
-ranks = ('Two','Three','Four','Five','Six','Seven','Eight','Nine','Ten','Jack','Queen','King','Ace')
-values = {'Two':2,'Three':3,'Four':4,'Five':5,'Six':6,'Seven':7,'Eight':8,'Nine':9,'Ten':10,'Jack':11,'Queen':12,'King':13,'Ace':14}
 
-player1= PLayer('Player1')
-player2= PLayer('PLayer2')
+player1= Player('Player1')
+player2= Player('PLayer2')
 
 game_deck = Deck()
 game_deck.shuffle()
